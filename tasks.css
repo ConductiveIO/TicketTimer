@@ -1,0 +1,38 @@
+/* CSS declarations go here */
+
+body {
+  font-family: sans-serif;
+  background-color: #315481;
+  background-image: linear-gradient(to bottom, #66CCFF, #FF9999 100%);
+  background-attachment: fixed;
+
+  position: absolute;
+  font-size: 14px;
+
+  width: 100%;
+}
+
+.grid{
+  margin: 0 auto;
+  width: 600px;
+  height: 600px;
+}
+
+.col{
+  margin: 0 auto;
+  display: inline-block;
+  width: 32%;
+}
+
+.task_icon{
+  width: 200px;
+  height: 200px;
+  background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+  background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
+  text-align: center;
+}
+
+.task_container{
+
+}
