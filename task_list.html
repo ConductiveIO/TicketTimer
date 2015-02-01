@@ -1,19 +1,6 @@
 <template name="task_list">
-<div class="grid">
-  <div class="col">
-    <div class="task_icon" id="r1c1">Reviews</div>
-    <div class="task_icon" id="r1c2">Standup</div>
-    <div class="task_icon" id="r1c3">Void</div>
-  </div>
-  <div class="col">
-    <div class="task_icon" id="r2c1">Ticket 1</div>
-    <div class="task_icon" id="r2c2">Ticket 2</div>
-    <div class="task_icon" id="r2c3">Ticket 3</div>
-  </div>
-  <div class="col">
-    <div class="task_icon" id="r3c1">Ticket 4</div>
-    <div class="task_icon" id="r3c2">Ticket 5</div>
-    <div class="task_icon" id="r3c3">Ticket 6</div>
-  </div>
-</div>
+    <div class="span2 task-icon" id="{{_id}}">
+      <div class="remove-btn" data-task="{{name}}">X</div>
+      <p>{{name}}</p>
+    </div>
 </template>

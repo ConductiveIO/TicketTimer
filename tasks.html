@@ -1,11 +1,25 @@
 <head>
   <title>tasks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
 
 <body>
   <h1>Welcome to Meteor!</h1>
   
-  <div class="task_containter">
-    {{> task_list}}
+  <div id="main-container">
+    <div id="task-container" class="row">
+      {{#each tasks}}
+        {{ > task_list }}
+      {{/each}}
+      <div id="play-btn" class="span2"></div>
+      <div id="pause-btn" class="span2"></div>
+    </div>
+    <div id="timer-container">
+      <span class="timer"></span>
+    </div>
+    <div class="entry-form">
+      {{> entry_form }}
+    </div>
   </div>
 </body>

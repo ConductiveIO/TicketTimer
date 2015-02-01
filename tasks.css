@@ -12,10 +12,11 @@ body {
   width: 100%;
 }
 
-.grid{
-  margin: 0 auto;
-  width: 600px;
-  height: 600px;
+#main-container{
+  position: relative;
+}
+
+#task-container{
 }
 
 .col{
@@ -24,15 +25,81 @@ body {
   width: 32%;
 }
 
-.task_icon{
-  width: 200px;
-  height: 200px;
+.task-icon{
+  width: 100px;
+  height: 100px;
   background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
   background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);
   text-align: center;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.task_container{
+.selected {
+  background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, blue 100%, green 5%);
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, pink, white);
+  background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, green 100%%, blue 95%);
+}
 
+.task-icon>p{
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#task-container{
+  margin: 0 auto;
+}
+
+#play-btn{
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+          
+  border-left: 60px solid green;
+}
+
+#pause-btn{
+ width:80px;
+ height: 80px;
+ background: transparent;
+ position: relative;
+ margin-top: 10px;
+ display: block; 
+}
+
+#pause-btn:before {
+    width: 10px;        
+    height: 60px;
+    background: black;
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 25px;
+}
+ 
+#pause-btn:after {
+    width: 10px;        
+    height: 60px;
+    background: black;
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 25px;
+}
+
+.entry-form {
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+}
+
+.remove-btn {
+  width: 10px;
+  margin-top: 0;
+  margin-left: 90px;
+  color: #f09;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
 }
